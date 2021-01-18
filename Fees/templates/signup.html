@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Sign-up</title>
+    
+<body>
+    <div class="loginbox">
+    
+        <h1>Sign up </h1>
+        <form action ='/signup' method="POST">  {% csrf_token %}
+            <p>Username</p>
+            <input type="text" name="username" required placeholder="Enter Username">
+            <p>Registration num</p>
+            <input type="text" name="regnum" required placeholder="Regnum">
+            <p>Password (6 characters minimum):</p>
+            <input type="password" name="password"  minlength="6" required placeholder="Enter Password">
+            
+            <button type="submit">Sign up</button>
+            
+       
+        </form>
+        
+    </div>
+
+</body>
+</head>
+</html>
